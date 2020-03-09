@@ -12,7 +12,7 @@ class TestSqlExecutor(unittest.TestCase):
         self.assertIsNotNone(executor.open_connection())
     
     def test_fetch_one(self):
-        actual_value = (1, 'Alben', 'Tumanggor', 'albenft@gmail.com', '6282170059113', 1, 1, datetime.datetime(2020, 3, 9, 17, 20, 22), datetime.datetime(2020, 3, 9, 17, 20, 22))
+        actual_value = (1, 'Alben', 'Tumanggor', 'alben@tumanggor.mail', '6281234567890', 1, 1, datetime.datetime(2020, 3, 9, 22, 26, 13), datetime.datetime(2020, 3, 9, 22, 26, 13))
 
         executor = SqlExecutor(credentials.DB_HOST, credentials.DB_USERNAME, credentials.DB_PASSWORD, credentials.DB_DATABASE)
         query = 'SELECT * FROM barista WHERE id=1'
